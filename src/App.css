@@ -130,10 +130,75 @@ body {
 
   position: absolute;
   bottom: 0px;
+  left: 0px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   font-size: 16px;
+}
+
+/*DRIVER*/
+.CENTER-OPTIONS{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.Options-Driver{
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+
+  display: flex;
+  margin: 25px;
+  flex-direction: row;
+}
+
+.option-box{
+  width: 200px;
+  height: 200px;
+  font-size: 26px;
+  margin: 10px;
+
+  padding: 12px;
+
+  border-radius: 32px;
+  background-color: rgb(32, 32, 32);
+  border: 1px solid black;
+
+  font-size: px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+
+  transition: 0.35s;
+
+  color: white;
+}
+
+.option-box:hover{
+  border: 1px solid rgba(0, 102, 255, 0.884);
+  cursor: pointer;
+}
+
+.exit-button{
+  width : 140px;
+  height: 50px;
+  
+  font-size: 18px;
 }
