@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 
 import Footer from '../ExtraComponents/Footer.jsx';
+import DriverDashBoard from '../ExtraComponents/DriverDashBoard.jsx';
 
 function DriverPage() {
     return (
@@ -36,6 +37,7 @@ function DriverPage() {
             <button className='exit-button'>GO HOME</button>
         </Link>
         <Footer />
+        <DriverDashBoard />
         </div>
     )
 }
