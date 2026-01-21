@@ -5,17 +5,37 @@ import { Link } from "react-router-dom";
 
 
 function Home() {
-    return (
-        <div className="home-container">
-      <h1>Smart Tourist Bus</h1>
-      
-      <Link to="/PassangerPage">
-        <button>I am a Passenger</button>
-      </Link>
+  const [isInfoActive, setIsInfoActive] = useState(false);
 
-      <Link to="/DriverPage">
-        <button>I am a Driver</button>
-      </Link>
+    return (
+    <div className="home-container">
+
+      <div 
+        className='Helper'
+        onClick={() => setIsInfoActive(!isInfoActive)}
+      >?</div>
+      <div className={`Help-Main ${isInfoActive ? 'active' : ''}`}>
+        CLICK THE BUTTON THAT DESCRIBES YOU BEST
+      </div>
+
+        <h1>Smart Tourist Bus of Athens</h1>
+
+        <div className='Links-Main'>
+          <Link to="/PassangerPage">
+            <button
+              onClick={() => setIsInfoActive(false)}
+            >I am a Passenger</button>
+          </Link>
+
+          <Link to="/DriverPage">
+            <button
+              onClick={() => setIsInfoActive(false)}
+            >I am a Driver</button>
+          </Link>
+        </div>
+        <div className='footer'>
+          ΕΡΓΑΣΙΑ ΑΛΛΗΛΕΠΙΔΡΑΣΙΑΣ ΑΝΘΡΩΠΟΥ-ΥΠΟΛΟΓΙΣΤΗ - ΕΡΣΩΒ ΙΩΑΝΝΗΣ - 2025
+        </div>
     </div>
     )
 }
