@@ -3,6 +3,8 @@ import { useState } from 'react'
 // ROUTER RELATED IMPORTS
 import { Link } from "react-router-dom";
 
+import Footer from './Footer.jsx';
+
 function PassangerPage() {
     return (
         <div className='CENTER-OPTIONS'>
@@ -34,9 +36,7 @@ function PassangerPage() {
             <button className='exit-button'>GO HOME</button>
         </Link>
 
-        <div className='footer'>
-          ΕΡΓΑΣΙΑ ΑΛΛΗΛΕΠΙΔΡΑΣΙΑΣ ΑΝΘΡΩΠΟΥ-ΥΠΟΛΟΓΙΣΤΗ - ΕΡΣΩΒ ΙΩΑΝΝΗΣ - 2025
-        </div>
+        <Footer />
         </div>
     )
 }

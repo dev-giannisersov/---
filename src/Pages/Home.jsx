@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 
 
+import Footer from './Footer.jsx';
+
 function Home() {
   const [isInfoActive, setIsInfoActive] = useState(false);
 
@@ -33,9 +35,7 @@ function Home() {
             >I am a Driver</button>
           </Link>
         </div>
-        <div className='footer'>
-          ΕΡΓΑΣΙΑ ΑΛΛΗΛΕΠΙΔΡΑΣΙΑΣ ΑΝΘΡΩΠΟΥ-ΥΠΟΛΟΓΙΣΤΗ - ΕΡΣΩΒ ΙΩΑΝΝΗΣ - 2025
-        </div>
+        <Footer />
     </div>
     )
 }
