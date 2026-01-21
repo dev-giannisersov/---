@@ -176,8 +176,12 @@ body {
   padding: 12px;
 
   border-radius: 32px;
-  background-color: rgb(32, 32, 32);
-  border: 1px solid black;
+  background-color: rgba(32, 32, 32, 0.43);
+  border: 3px solid rgba(0, 0, 0, 0.295);
+
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.692);
 
   font-size: px;
   display: flex;
@@ -193,6 +197,7 @@ body {
 
 .option-box:hover{
   border: 1px solid rgba(0, 102, 255, 0.884);
+  background-color: rgba(32, 32, 32, 0.8);
   cursor: pointer;
 }
 
@@ -201,4 +206,42 @@ body {
   height: 50px;
   
   font-size: 18px;
+}
+
+/*PASSANGER DASHBOARD CODE*/
+
+.Pass-Dash{
+  width: 450px;
+  height: 100px;
+  background-color: rgba(255, 240, 240, 0.096);
+
+  border: 3px solid rgba(0, 0, 0, 0.45);
+
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.56);
+  
+  /*CODE TO CENTER IT OVER THE PASSANGER TAB*/
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
+
+  border-radius: 0px 0px 12px 12px;
+}
+
+.Next-Stop-1{
+  font-size: 32px;
+  color: rgba(255, 22, 22, 0.678);
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  transform: translateX(-50%);
+}
+
+.Next-Stop-2{
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.658);
+   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
 }

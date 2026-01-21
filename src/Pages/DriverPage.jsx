@@ -3,7 +3,7 @@ import { useState } from 'react'
 // ROUTER RELATED IMPORTS
 import { Link } from "react-router-dom";
 
-import Footer from './Footer.jsx';
+import Footer from '../ExtraComponents/Footer.jsx';
 
 function DriverPage() {
     return (

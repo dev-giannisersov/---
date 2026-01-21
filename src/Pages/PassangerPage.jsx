@@ -3,7 +3,8 @@ import { useState } from 'react'
 // ROUTER RELATED IMPORTS
 import { Link } from "react-router-dom";
 
-import Footer from './Footer.jsx';
+import Footer from '../ExtraComponents/Footer.jsx';
+import PassangerDashboard from '../ExtraComponents/PassangerDashboard.jsx';
 
 function PassangerPage() {
     return (
@@ -37,6 +38,7 @@ function PassangerPage() {
         </Link>
 
         <Footer />
+        <PassangerDashboard />
         </div>
     )
 }
