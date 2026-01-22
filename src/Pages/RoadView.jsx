@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import busVideo from '../Pictures/BusDrive.mp4';
 
-import { Link } from 'react-router-dom';
+import PassangerButton from '../ExtraComponents/PassangerButton.jsx';
 
 export class RoadView extends Component {
   render() {
@@ -20,9 +20,7 @@ export class RoadView extends Component {
          {/* We use the variable 'busVideo' we imported above */}
         <source src={busVideo} type="video/mp4" />
         </video>
-             <Link to="/PassangerPage" className='Go-Back'>
-             GO BACK
-        </Link>
+            <PassangerButton />
         </div>
     )
   }

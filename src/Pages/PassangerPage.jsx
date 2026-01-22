@@ -17,7 +17,7 @@ function PassangerPage() {
             Driver’s View
         </Link>
 
-        <Link to="/passenger/map" className="option-box">
+        <Link to="/passenger/Sightseeing" className="option-box">
             Smart Sightseeing
         </Link>
     </div>
