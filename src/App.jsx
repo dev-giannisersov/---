@@ -11,6 +11,11 @@ import Cafe from './Pages/Cafe.jsx';
 import Sightseeing from './Pages/Sightseeing.jsx';
 import Walk from './Pages/Walk.jsx';
 
+import Safety from './Pages/Safety.jsx';
+import Solar from './Pages/Solar.jsx';
+import Climate from './Pages/Climate.jsx';
+import Robot from './Pages/Vacuum.jsx';  
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -19,6 +24,7 @@ function App() {
   return (
     <Router>
       <Routes>
+
         <Route path="/" element={<Home/>}></Route>
 
         <Route path="DriverPage" element={<DriverPage/>}></Route>
@@ -29,10 +35,11 @@ function App() {
         <Route path="Passenger/Sightseeing" element={<Sightseeing/>}></Route>
         <Route path="Passenger/Walking" element={<Walk/>}></Route>
 
-        <Route path="driver/assistant"></Route>
-        <Route path="driver/solar"></Route>
-        <Route path="driver/climate"></Route>
-        <Route path="driver/robot"></Route>
+        <Route path="driver/assistant" element={<Safety/>}></Route>
+        <Route path="driver/solar" element={<Solar/>}></Route>
+        <Route path="driver/climate" element={<Climate/>}></Route>
+        <Route path="driver/robot" element={<Robot/>}></Route>
+
       </Routes>
     </Router>
   )

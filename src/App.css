@@ -579,3 +579,62 @@ body {
   border: 3px solid rgba(0, 0, 0, 0.85);
   cursor: pointer;
 }
+
+/* SAFETY PAGE */
+
+.Safety_Box{
+  width: 800px;
+  height: 200px;
+
+  border-radius: 12px;
+
+  background-color: rgba(71, 67, 67, 0.541);
+  border: 8px solid rgba(0, 0, 0, 0.733);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.692);
+
+  transition: 0.75s;
+}
+
+.Options_Container{
+  width: 800px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 15px;
+}
+
+.Button_Safety_Option{
+  width: 100px;
+  height: 50px;
+  background-color: rgba(85, 88, 86, 0.4);
+  border: 3px solid rgba(0, 0, 0, 0.7);
+
+  border-radius: 8px;
+
+  margin-left: 80px;
+
+  transition: 0.55s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.Button_Safety_Option:hover{
+  background-color: rgba(85, 88, 86, 0.55);
+  border: 3px solid rgba(0, 0, 0, 0.84);
+  cursor: pointer;
+}
