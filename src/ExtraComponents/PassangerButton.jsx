@@ -8,7 +8,7 @@ export class PassangerButton extends Component {
 
         <Link to="/PassangerPage" className='Go-Back'>
                GO BACK
-            </Link>
+        </Link>
     )
   }
 }
