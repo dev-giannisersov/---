@@ -412,7 +412,6 @@ body {
 .Map_hold{
   width: 800px;
   height: 534px;
-  background-color: rebeccapurple;
 
   position: relative;
 }
@@ -637,4 +636,74 @@ body {
   background-color: rgba(85, 88, 86, 0.55);
   border: 3px solid rgba(0, 0, 0, 0.84);
   cursor: pointer;
+}
+
+/* SOLAR CODE */
+
+.Solar_Container{
+  width: 900px;
+  height: 520px;
+
+  border-radius: 12px;
+
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.Solar_Left{
+  width: 400px;
+  height: 20%;
+  background-color: rgba(236, 2, 2, 0.18);
+  border: 3px solid black;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.6);
+
+  position: absolute;
+  left: 0px;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: 600;
+
+  transition: 0.45s;
+}
+
+.Solar_Left:hover{
+  cursor: pointer;
+}
+
+.Solar_Right{
+  width: 400px;
+  height: 100%;
+  background-color: rgba(20, 19, 19, 0.7);
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.56);
+
+  position: absolute;
+  right: 0px;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.Solar_Right_title{
+  font-size: 32px;
+  position: absolute;
+  top: 170px;
+   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.692);
+}
+
+.Battery_Status{
+  font-size: 88px;
+  font-weight: 700;
+  position: absolute;
+  top: 230px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.692);
 }
