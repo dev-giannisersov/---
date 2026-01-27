@@ -646,7 +646,6 @@ body {
 
   border-radius: 12px;
 
-
   position: relative;
 
   display: flex;
@@ -706,4 +705,206 @@ body {
   position: absolute;
   top: 230px;
   text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.692);
+}
+
+/* CLIMATE SYSTEM */
+
+
+.Current_Tempt{
+  width: 500px;
+  height: 170px;
+
+  background-color: rgba(59, 53, 53, 0.4);
+  border: 3px solid rgba(0, 0, 0, 0.5);
+
+  border-radius: 12px;
+}
+
+.Target_Tempt{
+  width: 500px;
+  height: 170px;
+
+  margin-top: 40px;
+
+  background-color: rgba(59, 53, 53, 0.4);
+  border: 3px solid rgba(0, 0, 0, 0.5);
+
+  border-radius: 12px;
+
+  text-shadow: 2px 2px 8px rgb(7, 7, 7);
+
+  position: relative;
+}
+
+.Top_Temp{
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  text-shadow: 2px 2px 8px rgb(7, 7, 7);
+}
+
+.ButtonTemp{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(17, 17, 17, 0.85);
+  font-size: 28px;
+  font-weight: 700;
+
+  position: absolute;
+
+  top: 75%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.37);
+}
+
+.ButtonTemp:hover{
+  background-color: rgba(17, 17, 17, 0.65);
+  cursor: pointer;
+}
+
+/* Vaccum */
+
+.Main_Vaccum_Box{
+  width: 750px;
+  height: 550px;
+
+  border-radius: 12px;
+
+  background-color: rgba(71, 69, 69, 0.74);
+  border: 3px solid rgba(0, 0, 0, 0.651);
+
+  position: relative;
+  
+  font-weight: 600;
+  text-shadow: 2px 2px 12px black;
+}
+
+.Title_Vaccum{
+  position: absolute;
+
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.Load_Vaccum{
+  width: 500px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid black; 
+  box-shadow: inset 0px 0px 12px black, 0px 0px 12px black;
+
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  text-shadow: 1px 1px 4px black;
+
+  background-color: rgba(255, 0, 0, 0.226);
+
+  position: relative;
+
+}
+
+.inner_Load{
+  height: 40px;
+  border-radius: 4px;
+
+  background-color: rgba(55, 168, 10, 1);
+  position: absolute;
+  left: 0px;
+    top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@keyframes Load_Begin {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 500px;
+  }
+}
+
+.Button_Vaccum{
+  width: 220px;
+  height: 40px;
+  background-color: rgba(23, 23, 24, 0.55);
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+
+  position: relative;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Button_Vaccum:hover{
+  background-color: rgba(23, 23, 24, 0.20);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.LostItems_Box{
+  width: 550px;
+  height: 200px;
+  background-color: rgba(114, 112, 112, 0.267);
+
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.LostItemPart{
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.062);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NoItems{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
 }
