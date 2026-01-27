@@ -4,9 +4,13 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 
 import Footer from '../ExtraComponents/Footer.jsx';
+import QuestionMarkInner from '../ExtraComponents/QuestionMarkInner.jsx'
 import DriverDashBoard from '../ExtraComponents/DriverDashBoard.jsx';
 
 function DriverPage() {
+
+    const [Info, setInfo] = useState(false)
+
     return (
         <div className='CENTER-OPTIONS'>
         <div>DRIVER</div>
@@ -38,8 +42,18 @@ function DriverPage() {
         </Link>
         <Footer />
         <DriverDashBoard />
+        <QuestionMarkInner onClick={() => {setInfo(!Info)}}/>
+        <div className='Box_Info'
+            style={{opacity : Info ? "1" : "0"}}
+        >
+            This is the Driver page, as a driver you have 4 critical controls!
+            You can manage the Climate and Solar Roof systems to save energy ,
+            monitor the Robot Vacuum for lost valuables ,
+            receive real-time Safety Alerts for fatigue and speed ,
+            or check the Door Status before moving!
+        </div>
         </div>
     )
 }
 
-export default DriverPage;
+export default DriverPage; 

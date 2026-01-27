@@ -4,9 +4,13 @@ import { useState } from 'react'
 import { Link } from "react-router-dom";
 
 import Footer from '../ExtraComponents/Footer.jsx';
+import QuestionMarkInner from '../ExtraComponents/QuestionMarkInner.jsx'
 import PassangerDashboard from '../ExtraComponents/PassangerDashboard.jsx';
 
 function PassangerPage() {
+
+    const [Info, setInfo] = useState(false)
+
     return (
         <div className='CENTER-OPTIONS'>
         <div>Passenger</div>
@@ -39,6 +43,16 @@ function PassangerPage() {
 
         <Footer />
         <PassangerDashboard />
+        <QuestionMarkInner onClick={() => {setInfo(!Info)}} />
+        <div className='Box_Info'
+        style={{opacity : Info ? "1" : "0"}}
+        >
+            This is the Passanger page, as a passanger you have 4 choises!,
+            You can look through the drivers camer
+            Order something from a local cafeteria,
+            learn information about some of the most famous sights within Athens
+            or use Walking mode for navigation!
+        </div>
         </div>
     )
 }
